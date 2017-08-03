@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloFromVux from '@/components/HelloFromVux'
+import Home from '@/components/Home'
+import SecondComponent from '@/components/SecondComponent'
 
 Vue.use(Router)
 
@@ -8,7 +9,10 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: HelloFromVux
+      component: Home
+    }, {
+      path: '/second',
+      component: SecondComponent
     }
   ]
 })
